@@ -1,0 +1,20 @@
+module.exports = {
+  extends: ['stylelint-config-standard'],
+  rules: {
+    'custom-property-pattern': null,
+    'selector-class-pattern': null,
+    'selector-id-pattern': null,
+    'value-keyword-case': null,
+    'property-no-unknown': true,
+    'unit-case': 'lower',
+    'color-hex-case': 'lower',
+    'color-hex-length': 'short',
+    'shorthand-property-no-redundant-values': true,
+    'declaration-block-no-duplicate-properties': true,
+    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global', 'local'] }],
+    'selector-pseudo-element-no-unknown': true,
+    'media-feature-range-notation': 'context',
+    'custom-media-pattern': '^--.*$',
+  },
+  ignoreFiles: ['node_modules/', 'dist/', '*.min.css'],
+};

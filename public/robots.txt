@@ -1,0 +1,12 @@
+# ML Lab - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://your-username.github.io/ml-lab/sitemap.xml
+
+# Disallow private/admin paths (if any)
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.ts$

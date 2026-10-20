@@ -1,0 +1,61 @@
+{
+  "name": "ml-lab",
+  "version": "1.0.0",
+  "description": "ML Lab — Platform latihan soal Machine Learning interaktif",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.js,.mjs --cache",
+    "lint:fix": "eslint src --ext .ts,.js,.mjs --fix",
+    "stylelint": "stylelint \"src/**/*.css\" --cache",
+    "stylelint:fix": "stylelint \"src/**/*.css\" --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "format": "prettier --write \"src/**/*.{ts,js,json,css,md}\"",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "machine-learning",
+    "education",
+    "visualization",
+    "web-components",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@storybook/web-components": "^7.6.0",
+    "@storybook/web-components-vite": "^7.6.0",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-storybook": "^0.6.15",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "playwright": "^1.40.0",
+    "prettier": "^3.1.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "storybook": "^7.6.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "lucide": "^0.294.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
